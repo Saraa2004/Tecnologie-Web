@@ -1,0 +1,1409 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(245, 222, 179, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.button, .button:disabled {
+    background-color: rgb(137, 85, 32); 
+    color: white; 
+    font-family: 'Chewy', sans-serif; 
+    font-size: 18px;
+    text-align: center;
+}
+
+.button:active {
+    background-color: rgb(137, 85, 32) !important;
+    color: white !important;
+}
+
+.button:hover {
+    transform: scale(0.95);
+    background-color: rgb(137, 85, 32);
+    color: white;
+}
+
+.button:focus {
+    background-color: rgb(137, 85, 32);
+    color: white;
+}
+
+.button-outline {
+    border: 2px solid rgb(137, 85, 32);
+    color: rgb(137, 85, 32);
+    font-family: 'Chewy', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.button-outline:active {
+    border: 2px solid rgb(137, 85, 32) !important;
+    color: rgb(137, 85, 32) !important;
+}
+
+.button-outline:hover {
+    text-decoration: underline;
+    border: 2px solid rgb(137, 85, 32);
+    color: rgb(137, 85, 32);
+}
+
+.button-outline:focus {
+    border: 2px solid rgb(137, 85, 32);
+    color: rgb(137, 85, 32);
+}
+
+.button-light {
+    background-color: rgb(204, 153, 102); 
+    color: white; 
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 18px;
+    text-align: center;
+}
+
+.button-light:active {
+    background-color:  rgb(204, 153, 102) !important;
+    color: white !important;
+}
+
+.button-light:hover {
+    background-color: rgb(190, 140, 90);
+    color: white;
+    font-weight: bold;
+}
+
+.button-light:focus {
+    background-color: rgb(204, 153, 102);
+    color: white;
+}
+
+.button-empty:active {
+    border: none !important;
+}
+
+.button-empty:focus {
+    border: none;
+}
+
+.button-black {
+    background-color: black; 
+    color: white; 
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    text-align: center;
+}
+
+.button-small, .button-small:disabled {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: rgb(190, 140, 90);
+    border: 2px solid rgb(190, 140, 90);
+}
+
+.button-small:active {
+    border: 2px solid rgb(190, 140, 90) !important;
+    color: rgb(190, 140, 90) !important;
+}
+
+.button-small:hover {
+    border: 2px solid rgb(137, 85, 32);
+    color: rgb(137, 85, 32);
+}
+
+.button-small:focus {
+    border: 2px solid rgb(190, 140, 90);
+    color: rgb(190, 140, 90);
+}
+
+.text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.text-italic {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
+
+.title {
+    font-family: 'Chewy', sans-serif;
+    text-align: center;
+    color: rgb(137, 85, 32);
+    font-size: 35px;
+}
+
+.text-input {
+    border-color: rgb(245, 222, 179);
+    text-align: start;
+    color: rgb(137, 85, 32);
+}
+
+.text-input::placeholder {
+    color: rgb(137, 85, 32);
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.text-input:focus {
+    border-color: rgb(137, 85, 32);
+    box-shadow: 0 0 5px rgb(245, 222, 179);
+    color: rgb(137, 85, 32);
+    font-weight: bold;
+}
+
+.text-input:hover {
+    border-color: rgb(137, 85, 32);
+    box-shadow: 0 0 5px rgb(245, 222, 179);
+    color: rgb(137, 85, 32);
+}
+
+.text-input:active {
+    color: rgb(137, 85, 32) !important;
+}
+
+.form-check-input {
+    border-color: rgb(137, 85, 32);
+}
+
+.form-check-input:checked {
+    border-color: rgb(137, 85, 32);
+    background-color: rgb(137, 85, 32);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 5px rgb(137, 85, 32);
+    border-color: rgb(137, 85, 32);
+}
+
+.card-border {
+    border: 2px solid rgb(245, 222, 179);
+}
+
+
+header {
+    padding-top: 3px;
+    background-color: white;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(137, 85, 32);
+    padding-bottom: 3px;
+}
+
+.bi-list {
+    color: rgb(137, 85, 32); 
+    font-size: 50px;
+}
+
+.iconaorsetto {
+    height: 60%;
+    width: auto;
+    margin-left: 6%;
+}
+
+header h4 {
+    color: rgb(137, 85, 32);
+    font-family: 'Chewy', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.bi-x-lg {
+    color: rgb(137, 85, 32); 
+    font-size: 30px;
+}
+
+.search {
+    background-color: rgb(245, 222, 179, 0.4);
+    border-color: rgb(245, 222, 179);
+    height: 40px;
+}
+
+.search::placeholder {
+    color: rgb(137, 85, 32);
+    opacity: 0.8;
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.search:focus {
+    background-color: rgb(245, 222, 179, 0.3);
+    border-color: rgb(137, 85, 32);
+    box-shadow: 0 0 5px rgb(245, 222, 179);
+    color: rgb(137, 85, 32);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.bi-search-heart, .bi-shield-check {
+    color: rgb(137, 85, 32);
+    font-size: 35px;
+}
+
+header > a {
+    height: 100%;
+}
+
+header > a > img {
+    height: 100%;
+    width: auto;
+}
+
+div.offcanvas.offcanvas-start.offcanvas-custom {
+    width: 75%;
+}
+
+div.offcanvas.offcanvas-end.offcanvas-custom {
+    width: 75%;
+}
+
+.offcanvas-body ul li > a {
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    padding: 4%;
+    color: rgb(137, 85, 32);
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.offcanvas-body ul li > a:hover {
+    text-decoration: underline;
+}
+
+.offcanvas-body ul li > div button {
+    display: inline-block;
+    height: 100%;
+    width: 80%;
+    padding: 4%;
+    color: rgb(137, 85, 32);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.offcanvas-body ul li > div button:hover {
+    color: rgb(137, 85, 32);
+    border-color: rgb(137, 85, 32);
+}
+
+.offcanvas-body ul li > div button:active {
+    color: rgb(137, 85, 32) !important;
+    border-color: rgb(137, 85, 32) !important;
+}
+
+.offcanvas-body ul li .logout {
+    background-color: rgb(137, 85, 32); 
+    color: white; 
+    font-family: 'Chewy', sans-serif; 
+    font-size: 18px;
+    text-align: center;
+    width: 60%;
+    padding: 2%;
+}
+
+.categoriesmenu {
+    background-color: rgb(245, 222, 179, 0.2);
+}
+
+.bi-person {
+    color: rgb(137, 85, 32); 
+    font-size: 42px;
+}
+
+.user {
+    height: 70%;
+}
+
+.user-badge {
+    font-size: 12px;
+    padding: 6% 10%;
+    background-color: rgb(204, 153, 102);
+}
+
+.bi-bag {
+    color: rgb(137, 85, 32); 
+    font-size: 40px;
+}
+
+.cart {
+    height: 70%;
+}
+
+.cart-badge {
+    font-size: 12px; 
+    padding: 6% 10%;
+    background-color: rgb(204, 153, 102);
+}
+
+.iconaborsa {
+    height: 70%;
+    width: auto;
+}
+
+.offcanvas-body .cartmenu-item {
+    width: 40%;
+}
+
+.offcanvas-body .cartmenu-info {
+    width: 60%;
+}
+
+.offcanvas-body .cartmenu-info a {
+    text-decoration: none;
+}
+
+.offcanvas-body .cartmenu-info a p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    color: rgb(204, 153, 102);
+    text-align: center;
+}
+
+.offcanvas-body section {
+    border-bottom: 1px solid rgb(137, 85, 32);
+}
+
+.offcanvas-body h3 {
+    color: rgb(137, 85, 32);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+}
+
+
+main {
+    margin-bottom: 5%;
+    flex: 1;
+}
+
+main p {
+    color: rgb(137, 85, 32)
+}
+
+
+.img-vetrina {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 250px;
+    border: 4px solid rgb(245, 222, 179);
+}
+
+.catcontainer {
+  background: linear-gradient(135deg, rgb(245, 222, 179, 0.3), #fbcdb4);
+  border-bottom: 2px solid rgb(245, 222, 179);
+  border-top: 2px solid rgb(245, 222, 179);
+}
+
+.category {
+    background-color: rgb(204, 153, 102, 0.6);
+    height: 60px;
+    width: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: rgb(137, 85, 32);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    border: 2px solid rgb(245, 222, 179);
+    font-weight: bold;
+}
+
+.category:hover {
+  transform: scale(1.08);
+}
+
+.catcontainer a {
+    text-decoration: none;
+}
+
+.bi-stars {
+    font-size: 30px;
+    color: rgb(255, 165, 0);
+}
+
+.custom-box {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border: 5px solid rgb(245, 222, 179);
+}
+
+.carousel-img {
+    object-fit: contain;
+    height: 160px;
+}
+
+.carousel-item a {
+    text-decoration: none;
+}
+
+.carousel-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    color: rgb(137, 85, 32);
+}
+
+.bi-chevron-compact-left, .bi-chevron-compact-right {
+    color: rgb(137, 85, 32);
+    font-size: 40px;
+}
+
+.why-title {
+  font-size: 30px;
+  color: rgb(240, 139, 36);
+}
+
+.why-item {
+    background-color: rgb(245, 222, 179, 0.5);
+    border-radius: 20px;
+}
+
+.why-item p {
+    font-size: 15px;
+    color: black;
+}
+
+.why-icon {
+    font-size: 18px;
+    color: rgb(190, 140, 90);
+}
+
+.why-more {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: rgb(240, 139, 36);
+  text-decoration: underline;
+}
+
+.why-more:hover {
+  color: rgb(194, 112, 27);
+}
+
+.newsletter-box {
+    background-color: #fff;
+    border: 2px solid rgb(137, 85, 32);
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.newsletter-box h3 {
+    font-size: 28px;
+}
+
+.bi-envelope-heart {
+    font-size: 24px;
+    color: rgb(137, 85, 32)
+}
+
+.star-rating {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.star-rating .bi-star-fill, .star-rating .bi-star-half, .star-rating .bi-star {
+    font-size: 22px;
+}
+
+.carousel-reviews .bi-star-fill, .carousel-reviews .bi-star-half, .carousel-reviews .bi-star {
+    font-size: 15px;
+}
+
+.stars-reviews {
+    text-align: start;
+}
+
+.recensione-box {
+    background-color: rgb(245, 222, 179, 0.5);
+    width: 85%;
+    height: 178px;
+    border-radius: 10px;
+    border: rgb(137, 85, 32) 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel-reviews .carousel-control-prev {
+    left: -10px; 
+}
+
+.carousel-reviews .carousel-control-next {
+    right: -10px;
+}
+
+.cookie {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 90%;
+    background: white; 
+    border-radius: 10px; 
+    border: 2px solid rgb(137, 85, 32); 
+    text-align: center;
+}
+
+.cookie p {
+    color: black;
+}
+
+
+.bi-exclamation-triangle, .bi-check-circle {
+    font-size: 20px;
+}
+
+.bi-envelope {
+    color: rgb(137, 85, 32);
+    font-size: 20px;
+}
+
+.bi-key {
+    color: rgb(137, 85, 32);
+    font-size: 22px;
+}
+
+.show-password {
+    border-color: rgb(245, 222, 179);
+    background-color: rgb(245, 222, 179, 0.8)
+}
+
+.show-password:hover {
+    background-color: rgb(245, 222, 179, 0.5);
+    border-color: rgb(245, 222, 179);
+}
+
+.show-password:focus {
+    background-color: rgb(245, 222, 179, 0.5);
+    border-color: rgb(245, 222, 179);
+}
+
+.show-password:active {
+    background-color: rgb(245, 222, 179, 0.5) !important;
+    border-color: rgb(245, 222, 179) !important;
+}
+
+.container-login a:first-child {
+    color: rgb(190, 140, 90);
+    font-size: 17px;
+}
+
+.container-login a:first-child:hover, .back, .bi-eye-slash, .bi-eye {
+    color: rgb(137, 85, 32);
+}
+
+.back:hover {
+    color: rgb(100, 60, 20);
+}
+
+
+.bi-telephone {
+    color: rgb(137, 85, 32);
+    font-size: 17px;
+}
+
+.container-register .bi-key, .cont-prodotti p {
+    font-size: 19px;
+}
+
+.container-register .row > div {
+    margin-top: 2%;
+}
+
+
+.bi-person-circle {
+    font-size: 35px;
+    color: rgb(204, 153, 102);
+}
+
+.cont-account h2, .cont-account h3, .modal-content .bi-x-lg, .cont-accounts h2 {
+    font-size: 25px;
+}
+
+.btn-points {
+    background-color: rgb(255, 255, 153);
+}
+
+.btn-points:active {
+    background-color: rgb(255, 255, 153) !important;
+}
+
+.btn-points:focus {
+    background-color: rgb(255, 255, 153);
+}
+
+.btn-points:hover {
+    background-color: rgb(255, 255, 153);
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.bi-star-fill, .bi-star-half, .bi-star {
+    color: rgb(255, 165, 0);
+    font-size: 20px;
+}
+
+.collapse-points {
+    background-color: rgb(245, 222, 179, 0.3);
+}
+
+.collapse-points > h3 {
+    color: rgb(137, 85, 32);
+    font-size: 21px;
+}
+
+.bi-bell, .bi-bookmark-heart, .bi-box-seam, 
+.bi-gear, .bi-boxes, .bi-people, .btn-delete,
+.container-register .bi-envelope, .cookie h5 {
+    font-size: 18px;
+}
+
+.bi-pen {
+    font-size: 15px;
+}
+
+
+.modal {
+    --bs-modal-header-border-color: none;
+    --bs-modal-footer-border-color: none;
+}
+
+.modal-content {
+    background-color: rgb(255, 245, 225);
+}
+
+
+.cont-assistenza h2, .cont-assistenza h3 {
+    font-size: 22px;
+}
+
+
+.bi-info-circle-fill {
+    color: rgb(137, 85, 32);
+    font-size: 25px;
+}
+
+.cont-info h2 {
+    color: rgb(137, 85, 32);
+    font-size: 20px;
+}
+
+.cont-info li, .cont-info a {
+    color: rgb(137, 85, 32);
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 2px solid rgb(245, 222, 179);
+}
+
+.cont-info a:hover {
+    color: rgb(100, 60, 20);
+}
+
+
+.cont-prodotti h2 {
+    color: rgb(137, 85, 32);
+    font-size: 21px;
+}
+
+.imgProdotto {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    border: wheat 4px solid;
+}
+
+
+.bi-bag-heart-fill {
+    font-size: 29px;
+    color: rgb(137, 85, 32);
+}
+
+.bi-dash-circle, .bi-plus-circle {
+    color: rgb(137, 85, 32);
+    font-size: 17px;
+}
+
+.stock-warning {
+    display: none;
+    background-color: rgb(245, 222, 179, 0.5);
+}
+
+.stock-warning p {
+    font-size: 16px;
+    color: black;
+}
+
+.bi-trash3-fill {
+    color: rgb(137, 85, 32);
+    font-size: 18px;
+}
+
+.img-carrello {
+    height: 220px;
+    width: auto;
+    border-radius: 20px;
+    border: wheat 4px solid;
+}
+
+
+.img-singola {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    border: wheat 4px solid;
+}
+
+.bi-heart, .bi-heart-fill {
+    font-size: 35px;
+    color: red;
+}
+
+.bi-heart:hover, .bi-heart-fill:hover {
+    color: rgb(230, 0, 0);
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+    background-color: rgb(245, 222, 179, 0.5);
+    color: rgb(137, 85, 32);
+    font-size: 18px;
+}
+
+.accordion-button:focus {
+    color: rgb(137, 85, 32);
+}
+
+.bi-chevron-down {
+    color: rgb(137, 85, 32);
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.accordion-button:not(.collapsed) .bi-chevron-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.accordion-body {
+    background-color: rgb(245, 222, 179, 0.5);
+    border-end-end-radius: 5px;
+    border-end-start-radius: 5px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgb(245, 222, 179, 0.5);
+}
+
+.bi-pencil-square {
+    font-size: 18px;
+}
+
+.cont-prodotto .bi-trash3-fill {
+    color: white;
+}
+
+.bi-x-circle-fill {
+    color: white;
+    font-size: 17px;
+}
+
+
+.bi-person-fill {
+    font-size: 32px;
+    color: rgb(137, 85, 32);
+}
+
+
+.cont-notifiche h2 {
+    font-size: 20px;
+    color: rgb(137, 85, 32);
+}
+
+.cont-notifiche .nuova-notifica {
+    background-color: red;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.cont-notifiche .notifica-letta {
+    background-color: green;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.messaggio-notifica, .chiudi-notifica, .elimina-notifica, .accordion-button::after {
+    display: none;
+}
+
+
+.cont-orders h2 {
+    font-size: 23px;
+}
+
+
+.cont-shipping .bi-truck, .bi-chat-heart, .bi-wallet2 {
+    font-size: 30px;
+    color: rgb(137, 85, 32);
+}
+
+.cont-shipping h4, .cont-payment h4 {
+    font-size: 19px;
+}
+
+.cont-shipping h2 {
+    font-size: 27px;
+    color: rgb(137, 85, 32);
+}
+
+.cont-shipping .card {
+    border-radius: 40px;
+}
+
+.cont-shipping .card > div {
+    border-bottom: wheat 2px solid;
+}
+
+
+.cont-payment .stock-warning label, .cont-shipping label {
+    font-size: 17px;
+}
+
+.cont-payment h2 {
+    font-size: 27px;
+    color: rgb(137, 85, 32);
+}
+
+.cont-payment .sezioneCarta h2, .cont-payment .sezionePunti h3 {
+    font-size: 24px;
+    color: rgb(137, 85, 32);
+}
+
+.punti-utente, .cont-reviews h2 {
+    font-size: 20px;
+}
+
+
+.bi-balloon-heart {
+    font-size: 32px;
+    color: rgb(137, 85, 32);
+}
+
+
+.bi-clipboard-heart {
+    font-size: 29px;
+    color: rgb(137, 85, 32);
+}
+
+.stars-rating .bi-star-fill, .stars-rating .bi-star-half, .stars-rating .bi-star {
+    font-size: 27px;
+}
+
+.card-review {
+    border-radius: 30px;
+}
+
+
+.cont-tracking h2 {
+    font-size: 22px;
+}
+
+.cont-tracking h3, .cont-reviews h3, .cont-order h2 {
+    font-size: 18px;
+}
+
+.cont-tracking .card-tracking p {
+    color: rgb(137, 85, 32);
+    font-size: 18px;
+}
+
+
+.cont-order img {
+    height: 100px;
+    width: auto;
+}
+
+.cont-order h3 {
+    font-size: 25px;
+    color: rgb(137, 85, 32);
+}
+
+
+footer {
+    background-color: rgb(137, 85, 32);
+    text-align: center;
+}
+
+footer > a {
+    font-size: 14px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .button, .button-outline, .button-light {
+        font-size: 22px;
+    }
+
+    .button-black {
+        font-size: 17px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .text-italic {
+        font-size: 20px;
+    }
+    
+    
+    header {
+        height: 140px;
+    }
+
+    div.offcanvas.offcanvas-start.offcanvas-custom,
+    div.offcanvas.offcanvas-end.offcanvas-custom {
+        width: 30%;
+    }
+
+    header button:first-child {
+        margin-left: 2%;
+    }
+
+    .bi-list {
+        font-size: 60px;
+    }
+
+    header .user {
+        margin-right: 2%;
+    }
+
+    .bi-person, .bi-bag, header h4 {
+        font-size: 50px;
+    }
+
+    .user-badge, .cart-badge {
+        font-size: 15px;
+        padding: 5% 10%;
+    }
+
+    header .cart {
+        margin-right: 2%;
+        margin-bottom: 1%;
+    }
+
+    .iconaorsetto {
+        height: 90%;
+        margin-left: 10%;
+    }
+
+    .bi-x-lg, .bi-stars {
+        font-size: 40px;
+    }
+
+    .search {
+        height: 50px;
+        margin-right: 1%;
+    }
+
+    .search::placeholder, .search:focus {
+        font-size: 20px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-left: 3%;
+        margin-top: 4%;
+    }
+
+    .offcanvas-body ul li > a, .offcanvas-body ul li > div button,
+    .offcanvas-body .cartmenu-info a p {
+        font-size: 22px;
+    }
+
+    .offcanvas-body ul li .logout {
+        font-size: 22px;
+        margin-bottom: 3%;
+    }
+
+    .iconaborsa {
+        height: 100%;
+        margin-left: 3%;
+    }
+    
+    .offcanvas-body h3 {
+        font-size: 26px;
+    }
+    
+
+    .img-vetrina {
+        width: 60%;
+        height: 500px; 
+    }
+
+    .welcome-message {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .category {
+        height: 100px;
+        width: 60%;
+        font-size: 25px;
+    }
+
+    .custom-box-md {
+        border: 5px solid rgb(245, 222, 179);
+    }
+
+    .custom-box-md:hover {
+        transform: scale(1.08);
+    }
+
+    .why-title {
+        font-size: 45px;
+    }
+
+    .why-item {
+        padding: 7% !important;
+    }
+
+    .why-item p {
+        font-size: 18px;
+    }
+
+    .why-icon, .why-more, .cookie h5 {
+        font-size: 22px;
+    }
+
+    .newsletter-box {
+        width: 60%;
+        margin: auto;
+    }
+
+    .newsletter-box h3 {
+        font-size: 35px;
+    }
+
+    .bi-envelope-heart {
+        font-size: 30px;    
+    }
+
+    .star-rating .bi-star-fill, .star-rating .bi-star-half, .star-rating .bi-star {
+        font-size: 25px;
+    }
+
+    .carousel-reviews .bi-star-fill, .carousel-reviews .bi-star-half, 
+    .carousel-reviews .bi-star, .star-rating {
+        font-size: 20px;
+    }
+
+    .recensione-box {
+        width: 45%;
+        height: 200px;
+    }
+
+    .carousel-reviews .carousel-control-prev {
+        left: -60px; 
+    }
+
+    .carousel-reviews .carousel-control-next {
+        right: -60px;
+    }
+
+    .cookie, .cont-account {
+        width: 60%;
+    }
+
+
+    .bi-exclamation-triangle, .bi-envelope {
+        font-size: 25px;
+    }
+
+    .bi-key {
+        font-size: 27px;
+    }
+
+    .container-login a:first-child, .bi-telephone, .container-register .bi-key {
+        font-size: 20px;
+    }
+    
+
+    .container-register {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container-register .bi-envelope {
+        font-size: 21px;
+    }
+
+
+    .cont-account h2, .cont-account h3, .modal-content .bi-x-lg {
+        font-size: 30px;
+    }
+
+    .bi-person-circle {
+        font-size: 42px;
+    }
+
+    .bi-star-fill, .bi-star-half, .bi-star, .collapse-points > h3,
+    .cont-info h2 {
+        font-size: 25px;
+    }
+
+    .bi-bell, .bi-pen, .bi-bookmark-heart, .bi-box-seam, 
+    .bi-gear, .bi-boxes, .bi-people, .btn-delete, .bi-trash3-fill {
+        font-size: 22px;
+    }
+
+
+    .cont-assistenza {
+        width: 50%;
+    }
+
+    .cont-assistenza h2, .cont-assistenza h3 {
+        font-size: 27px;
+    }
+
+
+    .bi-info-circle-fill {
+        font-size: 35px;
+    }
+
+    iframe {
+        width: 50%;
+        height: 300px;
+    }
+
+    
+    .bi-shield-check {
+        font-size: 38px;
+        margin-right: 1%;
+    }
+    
+
+    .cont-prodotti h2 {
+        font-size: 24px;
+    }
+
+    .cont-prodotti p {
+        font-size: 21px;
+    }
+
+    .imgProdotto:hover {
+        transform: scale(1.08);
+    }
+
+    .card-empty {
+        width: 60%;
+        margin: auto !important;
+    }
+
+
+    .bi-bag-heart-fill, .bi-heart, .bi-heart-fill {
+        font-size: 38px;
+    }
+
+    .bi-dash-circle, .bi-plus-circle {
+        font-size: 19px;
+    }
+
+    .stock-warning p {
+        font-size: 18px;
+    }
+
+    .img-carrello {
+        height: 220px;
+    }
+    
+    
+    .accordion {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .accordion-button, .bi-pencil-square {
+        font-size: 22px;
+    }
+
+    .bi-chevron-down {
+        font-size: 23px;
+    }
+
+    .img-singola {
+        height: 350px;
+        margin-left: 5%;
+    }
+
+    .cont-prodotto {
+        padding-right: 5%;
+    }
+
+    .bi-x-circle-fill {
+        font-size: 20px;
+    }
+
+
+    .bi-person-fill {
+        font-size: 45px;
+    }
+
+    .cont-accounts h2 {
+        font-size: 30px;
+    }
+
+    .cont-accounts, .cont-reviews, .cont-order {
+        width: 80%;
+    }
+
+    .cont-accounts .card {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+
+    .bi-chat-heart, .bi-wallet2 {
+        font-size: 40px;
+    }
+   
+    .cont-notifiche h2, .punti-utente, .cont-reviews h2 {
+        font-size: 24px;
+    }
+
+    .cont-notifiche .nuova-notifica, .cont-notifiche .notifica-letta {
+        font-size: 16px;
+    }
+    
+    .cont-notifiche {
+        width: 70%;
+    }
+
+
+    .cont-orders h2 {
+        font-size: 27px;
+    }
+
+    .cont-orders {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .cont-orders .card {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+
+    .cont-shipping, .card-media {
+        width: 40%;
+    }
+
+    .cont-shipping .bi-truck {
+        font-size: 45px;
+    }
+
+    .cont-shipping h4, .cont-payment h4, .cont-reviews h3 {
+        font-size: 22px;
+    }
+
+    .cont-shipping h2, .cont-payment h2 {
+        font-size: 32px;
+    }
+
+    .cont-shipping label, .cont-payment .stock-warning label {
+        font-size: 21px;
+    }
+
+
+    .cont-payment, .cont-tracking {
+        width: 50%;
+    }
+
+    .cont-payment .sezioneCarta h2, .cont-payment .sezionePunti h3, .cont-payment h3 { 
+        font-size: 28px;
+    }
+
+
+    .bi-balloon-heart {
+        font-size: 44px;
+    }
+
+    .favourite:hover {
+        transform: scale(1.08);
+    }
+
+
+    .bi-clipboard-heart {
+        font-size: 38px;
+    }
+
+    .stars-rating .bi-star-fill, .stars-rating .bi-star-half, .stars-rating .bi-star {
+        font-size: 32px;
+    }
+
+    .cont-userreviews {
+        width: 60%;
+    }
+
+
+    .cont-tracking h2 {
+        font-size: 26px;
+    }
+
+    .cont-tracking h3, .cont-tracking .card-tracking p, .cont-order h2 {
+        font-size: 22px;
+    }
+
+
+    .cont-order img {
+        height: 120px;
+    }
+
+    .cont-order h3 {
+        font-size: 30px;
+    }
+
+
+    footer > a {
+        font-size: 16px;
+    }
+       
+}
